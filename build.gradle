@@ -10,14 +10,7 @@ group = 'org.example'
 version = '1.0-SNAPSHOT'
 
 repositories {
-    maven {
-        url 'https://maven.ia55.net/arcesium'
-        metadataSources {
-            mavenPom()
-            artifact()
-            ignoreGradleMetadataRedirection()
-        }
-    }
+    mavenCentral()
     maven {
         url 'https://plugins.gradle.org/m2/'
         metadataSources {
