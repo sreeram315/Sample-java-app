@@ -3,6 +3,7 @@
 ## Setup
 
 **Start MS SQL in docker**
+- Run: `docker-compose -f file.yaml up -d`
 ```
 version: '3.8'
 services:
@@ -20,5 +21,3 @@ services:
 ```
 ./gradlew run
 ```
-
-Then check logs.
