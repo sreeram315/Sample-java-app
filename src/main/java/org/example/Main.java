@@ -30,13 +30,9 @@ import java.util.concurrent.Executors;
  * }
  */
 public class Main {
-    static {
-        System.setProperty("sun.security.jgss.native", "true");
-    }
-
     public static void main(String[] args) {
         System.out.println("Starting ... ");
-        int nThreads = 100, nExecs = 1;
+        int nThreads = 100, nExecs = 10000;
         ExecutorService executorService = Executors.newFixedThreadPool(nThreads);
         for (int i = 0; i < nExecs; i++) {
             executorService.submit(Main::runQuery);
@@ -90,4 +86,3 @@ public class Main {
         }
     }
 }
-
