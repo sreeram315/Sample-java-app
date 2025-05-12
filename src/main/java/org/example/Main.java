@@ -28,6 +28,10 @@ import java.util.concurrent.Executors;
  *             'net.sourceforge.jtds:jtds:1.3.1',
  *             'org.apache.tomcat:tomcat-jdbc:7.0.88'
  * }
+ *
+ * Run: ./gradlew run &> out.log
+ * you will see some queries giving 0 results.
+ *
  */
 public class Main {
     public static void main(String[] args) {
